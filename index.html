@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="washu, pikers, a capella, washington university, perform, acapella, singing, wedding, booking, singers, sing, music, st louis" />
+    <meta name="description" content="The booking and information for the Washington University Pikers, St. Louis' oldest all-male university a cappella group." />
+
+    <title>The Washington University Pikers</title>
+
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+
+    <!-- CDN links for config
+        1. Bootstrap stylesheet (v4.3)
+        2. JQuery slim (v3.0)
+        3. Popper.js 
+        4. Bootstrap script
+        5. Font awesome
+    -->
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
+    <!-- Custom styles-->
+	<link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="pikers-logo" src="assets/images/pWhite.png" class="navbar-brand" alt="The Washington University Pikers">
+                        The WashU Pikers
+                    </a>
+                </div>
+                
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="active nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>					
+                    <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gigs.html">Booking</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- Carousel of rotating images. To change images, add images to assets/images/ path
+        and update the src attribute of the <img/> tags below. -->
+        <div id="splashCarousel" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#splashCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#splashCarousel" data-slide-to="1"></li>
+                <li data-target="#splashCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/splash-1.JPG" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/splash-2.JPG" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/splash-3.JPG" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#splashCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#splashCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!-- Home info & logo. Welcome blurb with about info, plus seal logo -->
+        <div class="container home-content">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <img id="seal" style="margin-top:-40px;" src="assets/images/seal.png" alt="The Washington University Pikers">
+                    <h1 style="color:green;">Hi! We're the Pikers.</h1>
+                    <p>
+                        We're an all-male a cappella group, and the oldest a cappella group at WashU, founded in 1985. We all share a common love for music,
+                        despite coming from many backgrounds - some of us having extensive musical experience, and others little to none. 
+                        In all cases, we come together to sing. Whether it's a sorority gig or our annual campus concert, Jammin' Toast, we 
+                        strive to bring the most energetic and exciting energy possible to our performances. 
+                        And the most ridiculous. We're very good at that.
+                    </p>
+                    <br/>
+                </div>
+            </div>
+
+            <!-- Youtube links. To change desired featured videos, substitute another youtube link for the
+                src attribute of the below <iframe/> tags -->
+            <div class="container-fluid">
+                <div class="row">  
+                    <div class="col-lg-9">
+                        <h2>Check out some of our music!</h2>
+                        <div class="aspect-ratio">
+                            <iframe src="https://www.youtube.com/embed/OqmTRVhBP_8" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <p></p> <!-- Invisible spacer -->
+                        <div class="aspect-ratio">
+                            <iframe src="https://www.youtube.com/embed/AIOxe5nojXE" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                        </div>
+                        <p></p> <!-- Invisible spacer -->
+                    </div>
+                    <div class="col-lg-3">
+                        <a class="twitter-timeline" data-height="900" data-link-color="#008000" href="https://twitter.com/ThePikers?ref_src=twsrc%5Etfw"></a> <script async src="https://platform.twitter.com/widgets.js"></script>
+                    </div>
+                </div>
+            </div>
+            <br/>
+        </div>
+    </main>
+
+    <!--Footer Links-->
+		<div class="container-fluid">
+                <!--First row-->
+                <div class="row col-centered">
+                    <!--Facebook-->
+                    <div class="col">
+                        <a href="https://www.facebook.com/thepikers" class="col-centered"><i class="fa fa-facebook-official fa-5x"> </i></a>
+                    </div>
+                    <!-- Twitter-->
+                    <div class="col">
+                        <a href="https://twitter.com/ThePikers" class="col-centered"><i class="fa fa-twitter fa-5x"> </i></a>
+                    </div>
+                    <!-- YouTube -->
+                    <div class="col">
+                        <a href="http://www.youtube.com/WashUPikers" class="col-centered"><i class="fa fa-youtube-play fa-5x"> </i></a>
+                    </div>
+                    <!-- Spotify -->
+                    <div class="col">
+                        <a href="https://open.spotify.com/artist/5GzyGIBzCXxirFYS6B4njM" class="col-centered"><i class="fa fa-spotify fa-5x"> </i></a>
+                    </div>
+                </div>
+                <br/>
+            </div>
+            <!--/Footer Links-->
+    
+            <!--Copyright-->
+            <div class="col-md-6 col-centered">
+                <div class="container-fluid">
+                    <p></p> <!-- Invisible Spacer -->
+                    <p>© 2019 The Washington University Pikers</p>
+                    <p><a href="#">Contact</a> | <a href="http://www.wustl.edu/">Washington University in St. Louis</a> | <a href="http://admissions.wustl.edu/">Admissions</a>
+                </div>
+            </div> 
+            <!--/Copyright-->      
+    
+</body>
+</html>

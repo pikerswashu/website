@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="washu, pikers, a capella, washington university, perform, acapella, singing, wedding, booking, singers, sing, music, st louis" />
+    <meta name="description" content="The booking and information for the Washington University Pikers, St. Louis' oldest all-male university a cappella group." />
+
+    <title>The Washington University Pikers</title>
+
+    <!--<script src='main.js'></script>-->
+
+    <!-- CDN links for config
+        1. Bootstrap stylesheet (v4.3)
+        2. JQuery (v3.0)
+        3. Popper.js 
+        4. Bootstrap script
+        5. Font awesome
+    -->
+    
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.0.0.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> 
+
+    <!-- Custom styles-->
+	<link href="assets/css/main.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img id="pikers-logo" src="assets/images/pWhite.png" class="navbar-brand" alt="The Washington University Pikers">
+                        The WashU Pikers
+                    </a>
+                </div>
+                
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>					
+                    <li class="nav-item"><a class="nav-link" href="members.html">Members</a></li>
+                    <li class="nav-item"><a class="nav-link" href="gigs.html">Booking</a></li>
+                    <li class="active nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <br>
+        <br>
+        <div class="container">
+                <h1 class="col-centered">Contact the Pikers</h1>
+                <br>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Send Us an Email:</h2>
+                        <p>Want to get ahold of us for any reason (comments, gigs, albums, auditions, late night appointments)? Send an email to <a href="mailto:thepikers@gmail.com">thepikers@gmail.com</a>, and we'll get back to you ASAP.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Follow Us on Social Media:</h2>
+                        <p>The Pikers are on <a href="https://www.facebook.com/thepikers">Facebook</a> and <a href="https://twitter.com/ThePikers">Twitter</a>! This isn't the most efficient way of contacting us, but it's the most fun. Why not follow us while you're there? </p>
+                    </div>
+                </div>
+                <br>
+                <div class="row justify-content-center">
+                    <h2>Send Us a Note:</h2>
+                </div>
+                <div class="row justify-content-center">
+                    <button type="button" id="mail-button">
+                        <span id="mail-icon">&#9993;</span>
+                    </button>
+                </div>
+                <div class="row justify-content-center">
+                    <form class="gform" id="contact-form" method="POST" data-email="from_email@example.com" action="https://script.google.com/macros/s/AKfycbwdx7Y1XtRA_FtapN-q--dS9Fd_vamt35vt7VQDGg3O4bAkvX0/exec">
+                        <div class="row input-row">
+                            <div class="col col-lg">
+                                <input id="userName" name="name" required type="text" class="input form-control" placeholder="Your name">
+                            </div> 
+                            <div class="col col-lg">
+                                <input id="userEmail" name="email"  required type="text" class="input form-control" placeholder="Your email">
+                            </div>
+                        </div>
+                        <br/>
+                        <textarea id="userMessage" name="message" required cols="40" rows="4" class="form-control" placeholder="Your message" ></textarea>
+                        <div class="row justify-content-center">
+                            <button id="send-note" class="sendContactBtn">Send</button>
+                            <button id="cancel-button"> Cancel</button>
+                            
+                        </div>
+                        
+                    </form>
+                </div>
+                <div id="thankyou" class="row justify-content-center">    
+                    <h2>Thanks for reaching out! We'll get back to you soon.</h2>
+                </div>
+                <br>
+                <br>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3>Check out other WashU A Capella groups:</h3>
+                        <ul>
+                            <li><p><a href="http://acac.wustl.edu/">A Cappella Advisory Council</a> (governing body for WashU A Cappella)</p></li>
+                            <li><p><a href="http://afterdark.wustl.edu/">After Dark</a> (Co-ed)</p></li>
+                            <li><p><a href="http://amateurs.wustl.edu/">The Amateurs</a> (Co-ed)</p></li>
+                            <li><p><a href="http://disney.wustl.edu/">The Aristocats</a> (Co-ed, Disney)</p></li>
+                            <li><p><a href="http://deliverance.wustl.edu/">Deliverance</a> (Co-ed, Christian)</p></li>
+                            <li><p><a href="http://ghostlights.wustl.edu/">The Ghost Lights</a> (Co-ed, Broadway/Television)</p></li>
+                            <li><p><a href="http://greenleafs.wustl.edu/">The Greenleafs</a> (All-female)</p></li>
+                            <li><p><a href="http://fools.wustl.edu/">More Fools than Wise</a> (Co-ed, Classical)</p></li>
+                            <li><p><a href="http://mosaicwhispers.wustl.edu/">The Mosaic Whispers</a> (Co-ed)</p></li>
+                            <li><p><a href="https://www.facebook.com/pages/The-Sensasians/121797831179028">Sensasians</a> (Co-ed, Asian)</p></li>
+                            <li><p><a href="http://www.thestereotypes.org/">The Stereotypes</a> (All-male)</p></li>
+                            <li><p><a href="http://staam.wustl.edu/">Staam</a> (Co-ed, Jewish)</p></li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+        <br>
+        <br>
+    </main>
+    <!--Footer Links-->
+		<div class="container-fluid">
+                <!--First row-->
+                <div class="row col-centered">
+                    <!--Facebook-->
+                    <div class="col">
+                        <a href="https://www.facebook.com/thepikers" class="col-centered"><i class="fa fa-facebook-official fa-5x"> </i></a>
+                    </div>
+                    <!-- Twitter-->
+                    <div class="col">
+                        <a href="https://twitter.com/ThePikers" class="col-centered"><i class="fa fa-twitter fa-5x"> </i></a>
+                    </div>
+                    <!-- YouTube -->
+                    <div class="col">
+                        <a href="http://www.youtube.com/WashUPikers" class="col-centered"><i class="fa fa-youtube-play fa-5x"> </i></a>
+                    </div>
+                    <!-- Spotify -->
+                    <div class="col">
+                        <a href="https://open.spotify.com/artist/5GzyGIBzCXxirFYS6B4njM" class="col-centered"><i class="fa fa-spotify fa-5x"> </i></a>
+                    </div>
+                </div>
+            </div>
+            <!--/Footer Links-->
+    
+            <!--Copyright-->
+            <div class="col-md-6 col-centered">
+                <div class="container-fluid">
+                    <p></p> <!-- Invisible Spacer -->
+                    <p>© 2019 The Washington University Pikers</p>
+                    <p><a href="#">Contact</a> | <a href="http://www.wustl.edu/">Washington University in St. Louis</a> | <a href="http://admissions.wustl.edu/">Admissions</a>
+                </div>
+            </div> 
+            <!--/Copyright-->
+     
+    <!-- Form scripting -->
+    <script>
+    
+        $(document).ready( function() { 
+            $("#contact-form").hide();
+            $("#thankyou").hide();
+        });
+
+    
+        // show/hide event listeners
+        $("#mail-button").on('mouseover', function() {
+            $("#contact-form").fadeIn(1000);
+            $("#thankyou").fadeOut(1000);
+        });
+        $("#cancel-button").on('click', function() {
+            $("#contact-form").fadeOut(1000);
+        });
+
+        $("#contact-form").submit(function() {
+            $("#thankyou").fadeIn(1000);
+            $("#contact-form").fadeOut(1000);
+        });
+
+        /*
+        var contact = document.getElementById("contact-form");
+        if(contact.addEventListener){
+            contact.addEventListener("submit", callback, false); 
+        }else if(contact.attachEvent){
+            contact.attachEvent('onsubmit', callback);     
+        }
+
+        let callback = () => {
+            $("#thankyou").fadeIn(1000);
+            $("#contact-form").fadeOUt(1000);
+        }
+        
+        */
+       
+    </script>
+    <script data-cfasync="false" src="support/form-submission-handler.js"></script>
+</body>
+</html>

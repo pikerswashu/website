@@ -1,0 +1,174 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #5a5a5a;
+}
+iframe {
+    width: 100%;
+}
+
+a {
+    color: green;
+}
+a:hover {
+    color: grey;
+}
+  
+.col-centered{
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+/* MEDIA STYLES
+-------------------------------------------------- */
+/* For sizing and behavior of images, etc. */
+#pikers-logo{
+    width: 52px;
+    height: 42px;
+}
+#seal{
+    width: 126px;
+    height: 126px;
+    padding-bottom: 5px;
+}
+.news{
+    width: 301px;
+    height: 225px;
+}
+
+.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+}
+
+/* STYLE CAROUSEL
+-------------------------------------------------- */
+/* Carousel base class */
+.carousel {
+    margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption 
+.carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
+}
+*/
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+    height: 32rem;
+}
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+}
+
+/* STYLE HOME
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.home-content .col-lg-6 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+.home-content  h2 {
+    font-weight: 400;
+}
+.home-content  .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+ /* STYLE ABOUT
+-------------------------------------------------- */
+/* Style about page */ 
+.center-col {
+    margin-left: 10%;
+}
+
+
+ /* STYLE GIGS
+-------------------------------------------------- */
+/* Style gigs page */ 
+.gigBox {
+    background-color: whitesmoke;
+    padding: 5px 10px 5px 10px;
+    border-color: grey;
+    border-radius: 10px;
+    min-height: 200px;
+}
+
+.lightLink {
+    color:white;
+}
+
+ /* STYLE ABOUT
+-------------------------------------------------- */
+/* Style about page */ 
+.story {
+    background-color:whitesmoke;
+    padding: 20px 20px;
+}
+
+ /* STYLE CONTACT
+-------------------------------------------------- */
+/* Style contact page */
+#form-control {
+    width:1000px;
+}
+
+.user-message {
+    height:50%;
+}
+
+.sendContactBtn {
+    text-align: center;
+    background-color: green;
+    color:white;
+    width:200px;
+    border: none;
+    margin:20px auto;
+    border-radius:10px;
+}
+#cancel-button {
+    text-align: center;
+    background-color: red;
+    color:white;
+    width: 200px;
+    border: none;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+#mail-button{
+    text-align: center;
+    background-color: whitesmoke;
+    color:white;
+    width:90px;
+    border-color: green;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+#mail-icon{
+    font-size: 40px;
+}
